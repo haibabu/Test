@@ -1,0 +1,22 @@
+public class TestAllEven
+{
+
+	public static void main(String[] args)
+	{
+		System.out.println( allEven(246));;
+	}
+	public static boolean allEven(int N)
+	{
+	boolean even=true;
+	while(N>0 && even==true)
+	{
+		if((N%10)%2==1)
+		{
+			even= false;
+		}
+		System.out.println(N);
+		N=N/10;
+	}
+	return even;
+	}
+}
